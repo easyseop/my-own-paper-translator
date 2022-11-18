@@ -10,7 +10,7 @@ from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
 from io import StringIO
 
-pdfname= '23_4_06_480-490(21-522).pdf'
+pdfname= 'ManuscriptatSSRNandResearchGate.pdf'
 
 def convert_pdf_to_txt(pdfname):
     #pdf리소스 매니저 객체 생성
@@ -77,3 +77,6 @@ def summarize_and_translate(article, min_length=100, max_length=300):
 
 article = convert_pdf_to_txt(pdfname)
 a = summarize_and_translate(article, 100, 200)
+
+
+print(a)
